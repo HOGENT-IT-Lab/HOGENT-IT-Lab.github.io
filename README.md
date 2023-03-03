@@ -1,2 +1,2 @@
-# HOGENT-IT-Lab.github.io
+# hogent-it-lab.github.io
 Website for IT-Lab HoGent
