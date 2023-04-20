@@ -1,0 +1,35 @@
+.navbar {
+	@apply flex justify-between gap-4 bg-lighter p-4;
+
+	img {
+		@apply absolute;
+	}
+
+	div {
+		@apply ml-[100px] flex gap-3;
+	}
+
+	a {
+		@apply rounded-[10px] border border-gh-border bg-link p-2 px-4 pt-1;
+
+		&:hover {
+			@apply border-white bg-link-hover;
+		}
+	}
+
+	a.join {
+		@apply bg-[green];
+	}
+}
+
+.layout {
+	@apply flex min-h-screen flex-col gap-5;
+
+	main {
+		@apply flex flex-grow flex-col items-center;
+	}
+
+	footer {
+		@apply mb-5 text-center text-gh-border;
+	}
+}
