@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--lab-blue: #014a7f;
+	--github-bg: #0d1117;
+	--github-bg-light: #161b22;
+	--github-border: #30363d;
+	--github-link-bg: #21262d;
+	--github-link-bg-hover: #30363d;
+	// deve vars kunnen met tailwind worden gebruikt, zie tailwind.config.js
+}
+
+body {
+	color: #e6edf3;
+	background-color: var(--github-bg);
+	// ^ == @apply bg-dark
+}
+
+h1 {
+	@apply text-4xl;
+}
+
+h4 {
+	@apply pb-1 text-2xl;
+}
