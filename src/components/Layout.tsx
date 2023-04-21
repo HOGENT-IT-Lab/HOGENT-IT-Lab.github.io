@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from '@/../public/logo.png';
 import styles from '@/styles/layout.module.scss';
+import AuthPanel from './AuthPanel';
 
 function Navbar() {
 	return (
@@ -14,9 +15,12 @@ function Navbar() {
 				<Link href="/about">About</Link>
 				<Link href="/contact">Contact</Link>
 			</div>
-			<Link href="/join" className={styles.join}>
-				Join IT Lab als helper!
-			</Link>
+			<div>
+				<Link href="/join" className={styles.join}>
+					Join IT Lab als helper!
+				</Link>
+				<AuthPanel />
+			</div>
 		</div>
 	);
 }
