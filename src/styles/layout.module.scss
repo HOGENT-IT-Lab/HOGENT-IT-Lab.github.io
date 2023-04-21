@@ -6,7 +6,11 @@
 	}
 
 	> div {
-		@apply ml-[100px] flex items-end gap-3;
+		@apply flex items-end gap-3;
+
+		&:first-of-type {
+			@apply ml-[100px];
+		}
 	}
 
 	a.join {
