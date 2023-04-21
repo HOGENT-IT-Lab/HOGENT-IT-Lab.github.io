@@ -15,9 +15,9 @@ function Navbar() {
 				<Link href="/">Home</Link>
 				<Link href="/about">About</Link>
 				<Link href="/contact">Contact</Link>
-				<LanguagePicker />
 			</div>
 			<div>
+				<LanguagePicker />
 				<Link href="/join" className={styles.join}>
 					Join IT Lab als helper!
 				</Link>

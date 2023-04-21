@@ -5,22 +5,29 @@
 		@apply absolute;
 	}
 
-	div {
-		@apply ml-[100px] flex gap-3;
-	}
-
-	a,
-	button {
-		@apply rounded-[10px] border border-gh-border bg-link p-2 px-4;
-
-		&:hover,
-		button:hover {
-			@apply border-white bg-link-hover;
-		}
+	> div {
+		@apply ml-[100px] flex items-end gap-3;
 	}
 
 	a.join {
 		@apply bg-[green];
+	}
+}
+
+.language_picker {
+	@apply flex gap-[2px] text-sm;
+
+	button {
+		@apply border-dark bg-lighter p-1 px-2 text-link-hover;
+
+		&:hover {
+			@apply border-gh-border bg-link text-[unset];
+		}
+
+		&:disabled,
+		&:disabled:hover {
+			@apply border-dark bg-link text-[#99a0a6];
+		}
 	}
 }
 
