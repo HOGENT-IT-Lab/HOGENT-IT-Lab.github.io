@@ -1,8 +1,12 @@
+import { useTranslation } from 'react-i18next';
+
 export default function Home() {
+	const { t } = useTranslation();
+
 	return (
 		<div>
 			<div className="p-3 text-center">
-				<h4>Welcome to the IT-Lab! Check out our events:</h4>
+				<h4>{t('welcome')}</h4>
 			</div>
 			<iframe
 				className="rounded border border-gh-border"

@@ -1,3 +1,26 @@
 {
-	"welcome": "Welcome to the IT-Lab! Check out our events: "
+	"home": "Home",
+	"about": "About",
+	"contact": "Contact",
+	"join": "Join IT Lab as helper!",
+
+	"welcome": "Welcome to the IT-Lab! Check out our events:",
+
+	"goal": "Goal",
+	"goalDescription": "The IT Lab is an initiative for students by students.",
+	"whatwedo": "What do we do",
+	"whatwedoDescription": "During the weekly sessions (physical or online in the TI Discord) you can get help on any topic you may be struggling with. We give you tips/examples or go over theory/exercises from class, etc...",
+	"appointment": "Appointment",
+	"appointmentDescription": "Making an appointment is not necessary, you can always jump in and leave the session whenever you want.",
+	"events": "Events",
+	"eventsDescription": "The IT Lab also organizes events, often a workshop or session on an IT topic of our own interest, as well as guest speakers. ",
+	"where": "Where",
+	"whereDescription": "Online on Discord<br/>Physical on campus Schoonmeersen (B4.026) GHENT<br/>Broeikaslokaal AALST",
+
+	"contactUs": "Contact Us",
+	"name": "Name",
+	"discord": "Discord handle",
+	"subject": "Subject",
+	"message": "Message",
+	"send": "Send"
 }
