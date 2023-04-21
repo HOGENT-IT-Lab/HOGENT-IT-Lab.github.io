@@ -5,6 +5,7 @@ import Link from 'next/link';
 import logo from '@/../public/logo.png';
 import styles from '@/styles/layout.module.scss';
 import AuthPanel from './AuthPanel';
+import LanguagePicker from './LanguagePicker';
 
 function Navbar() {
 	return (
@@ -14,6 +15,7 @@ function Navbar() {
 				<Link href="/">Home</Link>
 				<Link href="/about">About</Link>
 				<Link href="/contact">Contact</Link>
+				<LanguagePicker />
 			</div>
 			<div>
 				<Link href="/join" className={styles.join}>
