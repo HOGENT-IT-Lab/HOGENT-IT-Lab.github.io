@@ -1,0 +1,25 @@
+{
+	"home": "Home",
+	"about": "Over ons",
+	"contact": "Contact",
+	"join": "Join IT Lab als helper!",
+
+	"welcome": "Welkom bij het IT-Lab! Bekijk onze kalender:",
+	"goal": "Doel",
+	"goalDescription": "Het IT Lab is een initiatief voor studenten door studenten.",
+	"whatwedo": "Wat doen we",
+	"whatwedoDescription": "Tijdens de wekelijkse sessies (fysiek of online, in de TI Discord) kan je hulp krijgen wanneer je moeite hebt met bepaalde vakken. We geven je tips/voorbeelden, overlopen met jou theorie of oefeningen uit de les, etc...",
+	"appointment": "Afspaak maken",
+	"appointmentDescription": "Een afspraak maken is niet nodig, je kan altijd binnenspringen en de sessie verlaten wanneer je maar wilt.",
+	"events": "Events",
+	"eventsDescription": "Het IT Lab organiseert ook enkele evenementen, vaak een workshop of sessie over een IT onderwerp dat we zelf interessant vinden, maar ook gastsprekers.",
+	"where": "Waar",
+	"whereDescription": "Online via Discord<br/>Fysiek op campus Schoonmeersen (B4.026) GENT<br/>Broeikaslokaal AALST",
+
+	"contactUs": "Contacteer Ons",
+	"name": "Naam",
+	"discord": "Discord handle",
+	"subject": "Onderwerp",
+	"message": "Bericht",
+	"send": "Verstuur"
+}

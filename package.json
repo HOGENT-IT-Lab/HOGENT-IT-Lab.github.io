@@ -13,10 +13,13 @@
 		"@types/node": "18.15.11",
 		"@types/react": "18.0.37",
 		"@types/react-dom": "18.0.11",
+		"i18next": "^22.4.15",
 		"next": "13.3.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"react-icons": "^4.8.0"
+		"react-i18next": "^12.2.0",
+		"react-icons": "^4.8.0",
+		"use-local-storage-state": "^18.3.2"
 	},
 	"devDependencies": {
 		"autoprefixer": "10.4.14",

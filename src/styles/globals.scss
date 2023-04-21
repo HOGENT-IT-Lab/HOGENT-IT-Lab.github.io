@@ -24,5 +24,32 @@ h1 {
 }
 
 h4 {
-	@apply pb-1 text-2xl;
+	@apply pb-2 text-2xl;
+}
+
+a,
+button {
+	@apply rounded-[10px] border border-gh-border bg-link p-2 px-4;
+
+	&:hover {
+		@apply border-white bg-link-hover;
+	}
+
+	&:disabled {
+		@apply border-dark bg-lighter text-gh-border;
+	}
+}
+
+.btn-group {
+	button {
+		@apply rounded-[0] border-x-[0.5px] p-2 py-1;
+
+		&:first-of-type {
+			@apply rounded-l-[10px] border-l-[1px];
+		}
+
+		&:last-of-type {
+			@apply rounded-r-[10px] border-r-[1px];
+		}
+	}
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { AppProps } from 'next/app';
 import Layout from '@/components/Layout';
 import MyAuth0Provider from '@/contexts/MyAuth0Provider';
+import '../i18n';
 import '@/styles/globals.scss';
 
 type Props = AppProps & { Component: React.ReactNode };
