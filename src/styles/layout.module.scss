@@ -9,10 +9,12 @@
 		@apply ml-[100px] flex gap-3;
 	}
 
-	a {
-		@apply rounded-[10px] border border-gh-border bg-link p-2 px-4 pt-1;
+	a,
+	button {
+		@apply rounded-[10px] border border-gh-border bg-link p-2 px-4;
 
-		&:hover {
+		&:hover,
+		button:hover {
 			@apply border-white bg-link-hover;
 		}
 	}
