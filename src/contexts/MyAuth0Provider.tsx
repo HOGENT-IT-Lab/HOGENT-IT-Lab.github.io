@@ -8,7 +8,7 @@ function MyAuth0Provider({ children }: { children: ReactNode }) {
 	const redirect =
 		process.env.NODE_ENV === 'development'
 			? 'http://localhost:3000/'
-			: 'https://tieproost.github.io';
+			: 'https://hogent-it-lab.github.io/';
 
 	return (
 		<Auth0Provider
