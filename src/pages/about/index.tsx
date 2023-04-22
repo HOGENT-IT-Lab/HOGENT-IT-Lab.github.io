@@ -4,7 +4,7 @@ export default function About() {
 	const { t } = useTranslation();
 
 	return (
-		<div className="flex w-[95%] flex-col gap-8 rounded bg-lab-blue p-8 pt-6 md:w-[60%]">
+		<div className="mx-5 flex flex-col gap-8 rounded bg-lab-blue p-8 pt-6 md:w-[60%]">
 			<div>
 				<h4>&gt; {t('goal')}?</h4>
 				{t('goalDescription')}

@@ -1,5 +1,5 @@
 .container {
-	@apply w-[95%] md:w-[60%];
+	@apply w-[90%] md:w-[600px];
 	margin-bottom: auto;
 	padding: 20px;
 	background-color: #014a7e;
@@ -7,7 +7,7 @@
 
 	.heading {
 		text-align: center;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 
 	form {

@@ -27,7 +27,7 @@ h4 {
 	@apply pb-2 text-2xl;
 }
 
-a,
+a[type='button'],
 button {
 	@apply rounded-[10px] border border-gh-border bg-link p-2 px-4;
 
@@ -40,16 +40,17 @@ button {
 	}
 }
 
-.btn-group {
-	button {
-		@apply rounded-[0] border-x-[0.5px] p-2 py-1;
+// .btn-group {
+// 	button,
+// 	a {
+// 		@apply rounded-[0] border-x-[0.5px];
 
-		&:first-of-type {
-			@apply rounded-l-[10px] border-l-[1px];
-		}
+// 		&:first-of-type {
+// 			@apply rounded-l-[10px] border-l-[1px];
+// 		}
 
-		&:last-of-type {
-			@apply rounded-r-[10px] border-r-[1px];
-		}
-	}
-}
+// 		&:last-of-type {
+// 			@apply rounded-r-[10px] border-r-[1px];
+// 		}
+// 	}
+// }

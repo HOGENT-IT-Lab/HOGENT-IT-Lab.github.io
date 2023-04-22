@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BsDiscord, BsGithub } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
 import logo from '@/../public/logo.png';
 import styles from '@/styles/layout.module.scss';
@@ -12,53 +13,61 @@ function Navbar() {
 	const { t } = useTranslation();
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-	function toggleMobileMenu() {
-		setIsMobileMenuOpen(!isMobileMenuOpen);
-	}
+	const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
 	return (
-		<div>
-			<div className={styles.navbar}>
-				<Image src={logo} alt="home" height={80} />
-				<div className={styles.navLinks}>
-					<Link href="/">{t('home')}</Link>
-					<Link href="/about">{t('about')}</Link>
-					<Link href="/contact">{t('contact')}</Link>
-				</div>
-				<div className={styles.navLinks}>
-					<LanguagePicker />
-					<Link href="/join" className={styles.join}>
-						{t('join')}
-					</Link>
-					<AuthPanel />
-				</div>
-				<button onClick={toggleMobileMenu} className={styles.hamburger}>
-					<div>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</button>
+		<div className={styles.navbar}>
+			<Image src={logo} alt="home" className={styles.logo} />
+
+			<div className={styles.navLinks}>
+				<Link href="/" type="button">
+					{t('home')}
+				</Link>
+				<Link href="/about" type="button">
+					{t('about')}
+				</Link>
+				<Link href="/contact" type="button">
+					{t('contact')}
+				</Link>
 			</div>
+
+			<div className={styles.navLinks}>
+				<LanguagePicker />
+				<Link href="/join" type="button" className={styles.join}>
+					{t('join')}
+				</Link>
+				<AuthPanel />
+			</div>
+
+			<button onClick={toggleMobileMenu} className={styles.hamburger}>
+				<div>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+
 			{isMobileMenuOpen && (
 				<div className={styles.mobileMenu}>
-					<Link onClick={toggleMobileMenu} href="/">
+					<Link href="/" type="button" onClick={toggleMobileMenu}>
 						{t('home')}
 					</Link>
-					<Link onClick={toggleMobileMenu} href="/about">
+					<Link href="/about" type="button" onClick={toggleMobileMenu}>
 						{t('about')}
 					</Link>
-					<Link onClick={toggleMobileMenu} href="/contact">
+					<Link href="/contact" type="button" onClick={toggleMobileMenu}>
 						{t('contact')}
 					</Link>
 					<Link
-						onClick={toggleMobileMenu}
 						href="/join"
-						style={{ backgroundColor: 'green' }}
+						type="button"
+						className={styles.join}
+						onClick={toggleMobileMenu}
 					>
 						{t('join')}
 					</Link>
-					<div className="m-2 flex justify-between">
+
+					<div className={styles.bottomPanel}>
 						<LanguagePicker />
 						<AuthPanel />
 					</div>
@@ -82,8 +91,26 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 			<div className={styles.layout}>
 				<Navbar />
+
 				<main>{children}</main>
-				<footer>2023 © IT Lab HoGent - itlab.hg@gmail.com</footer>
+
+				<footer>
+					2023 © IT Lab HoGent
+					<a
+						target="_blank"
+						href="https://github.com/HOGENT-IT-Lab"
+						rel="noopener noreferrer"
+					>
+						<BsGithub />
+					</a>
+					<a
+						target="_blank"
+						href="https://discord.gg/tihogent"
+						rel="noopener noreferrer"
+					>
+						<BsDiscord className={styles.discord} />
+					</a>
+				</footer>
 			</div>
 		</>
 	);
