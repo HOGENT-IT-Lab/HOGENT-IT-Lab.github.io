@@ -1,5 +1,5 @@
 .container {
-	width: 500px;
+	@apply w-[60%] max-[816px]:w-[100%];
 	margin-bottom: auto;
 	padding: 20px;
 	background-color: #014a7e;
