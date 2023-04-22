@@ -13,8 +13,17 @@
 		}
 	}
 
+	div.navLinks {
+		@apply max-[815px]:hidden;
+	}
+
 	a.join {
 		@apply bg-[green];
+	}
+
+	button.hamburger {
+		@apply min-[816px]:hidden;
+		margin-left: auto;
 	}
 }
 
