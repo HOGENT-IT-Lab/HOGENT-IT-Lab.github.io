@@ -1,5 +1,5 @@
 .container {
-	width: 500px;
+	@apply w-[95%] md:w-[60%];
 	margin-bottom: auto;
 	padding: 20px;
 	background-color: #014a7e;

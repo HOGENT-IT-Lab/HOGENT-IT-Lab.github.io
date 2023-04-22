@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,22 +10,60 @@ import LanguagePicker from './LanguagePicker';
 
 function Navbar() {
 	const { t } = useTranslation();
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+	function toggleMobileMenu() {
+		setIsMobileMenuOpen(!isMobileMenuOpen);
+	}
 
 	return (
-		<div className={styles.navbar}>
-			<Image src={logo} alt="home" height={80} />
-			<div>
-				<Link href="/">{t('home')}</Link>
-				<Link href="/about">{t('about')}</Link>
-				<Link href="/contact">{t('contact')}</Link>
+		<div>
+			<div className={styles.navbar}>
+				<Image src={logo} alt="home" height={80} />
+				<div className={styles.navLinks}>
+					<Link href="/">{t('home')}</Link>
+					<Link href="/about">{t('about')}</Link>
+					<Link href="/contact">{t('contact')}</Link>
+				</div>
+				<div className={styles.navLinks}>
+					<LanguagePicker />
+					<Link href="/join" className={styles.join}>
+						{t('join')}
+					</Link>
+					<AuthPanel />
+				</div>
+				<button onClick={toggleMobileMenu} className={styles.hamburger}>
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button>
 			</div>
-			<div>
-				<LanguagePicker />
-				<Link href="/join" className={styles.join}>
-					{t('join')}
-				</Link>
-				<AuthPanel />
-			</div>
+			{isMobileMenuOpen && (
+				<div className={styles.mobileMenu}>
+					<Link onClick={toggleMobileMenu} href="/">
+						{t('home')}
+					</Link>
+					<Link onClick={toggleMobileMenu} href="/about">
+						{t('about')}
+					</Link>
+					<Link onClick={toggleMobileMenu} href="/contact">
+						{t('contact')}
+					</Link>
+					<Link
+						onClick={toggleMobileMenu}
+						href="/join"
+						style={{ backgroundColor: 'green' }}
+					>
+						{t('join')}
+					</Link>
+					<div className="m-2 flex justify-between">
+						<LanguagePicker />
+						<AuthPanel />
+					</div>
+				</div>
+			)}
 		</div>
 	);
 }

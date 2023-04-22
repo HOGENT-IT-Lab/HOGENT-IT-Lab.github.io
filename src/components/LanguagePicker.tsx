@@ -17,7 +17,7 @@ export default function LanguagePicker() {
 	return (
 		<div className="flex items-center gap-2">
 			<IoLanguageOutline className="text-[#99a0a6]" />
-			<div className={styles.language_picker}>
+			<div className={styles.languagePicker}>
 				{languages.map((lng) => (
 					<button
 						key={lng}
