@@ -5,16 +5,12 @@
 		@apply absolute;
 	}
 
-	> div {
-		@apply flex items-end gap-3;
+	div.navLinks {
+		@apply hidden gap-4 md:flex md:items-center;
 
 		&:first-of-type {
 			@apply ml-[100px];
 		}
-	}
-
-	div.navLinks {
-		@apply max-[815px]:hidden;
 	}
 
 	a.join {
@@ -22,12 +18,23 @@
 	}
 
 	button.hamburger {
-		@apply min-[816px]:hidden;
-		margin-left: auto;
+		@apply ml-auto md:hidden;
+
+		div {
+			@apply space-y-1.5 rounded p-2 shadow;
+
+			span {
+				@apply block h-0.5 w-5 bg-gray-100;
+			}
+		}
 	}
 }
 
-.language_picker {
+.mobileMenu {
+	@apply m-4 mt-5 flex flex-col space-y-4 text-center md:hidden;
+}
+
+.languagePicker {
 	@apply flex gap-[2px] text-sm;
 
 	button {

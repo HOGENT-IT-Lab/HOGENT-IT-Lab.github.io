@@ -20,15 +20,12 @@ function Navbar() {
 		<div>
 			<div className={styles.navbar}>
 				<Image src={logo} alt="home" height={80} />
-				<div
-					className={`${styles.navLinks} md:flex md:items-center md:space-x-4`}
-				>
+				<div className={styles.navLinks}>
 					<Link href="/">{t('home')}</Link>
 					<Link href="/about">{t('about')}</Link>
 					<Link href="/contact">{t('contact')}</Link>
 				</div>
 				<div className={styles.navLinks}>
-					{' '}
 					<LanguagePicker />
 					<Link href="/join" className={styles.join}>
 						{t('join')}
@@ -36,15 +33,15 @@ function Navbar() {
 					<AuthPanel />
 				</div>
 				<button onClick={toggleMobileMenu} className={styles.hamburger}>
-					<div className="space-y-1.5 rounded p-2 shadow">
-						<span className="block h-0.5 w-5 bg-gray-100"></span>
-						<span className="block h-0.5 w-5 bg-gray-100"></span>
-						<span className="block h-0.5 w-5 bg-gray-100"></span>
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
 					</div>
 				</button>
 			</div>
 			{isMobileMenuOpen && (
-				<div className="m-4 mt-5 flex  flex-col space-y-4 text-center md:hidden">
+				<div className={styles.mobileMenu}>
 					<Link onClick={toggleMobileMenu} href="/">
 						{t('home')}
 					</Link>
