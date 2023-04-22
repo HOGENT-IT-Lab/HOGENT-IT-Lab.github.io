@@ -4,7 +4,7 @@ export default function Home() {
 	const { t } = useTranslation();
 
 	return (
-		<div>
+		<div className="flex flex-col items-center">
 			<div className="p-3 text-center">
 				<h4>{t('welcome')}</h4>
 			</div>
