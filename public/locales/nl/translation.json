@@ -21,5 +21,10 @@
 	"discord": "Discord handle",
 	"subject": "Onderwerp",
 	"message": "Bericht",
-	"send": "Verstuur"
+	"send": "Verstuur",
+
+	"joinUs": "Wil je er ook bij",
+	"weAccept": "Wij verwelkomen iedereen met de juiste intenties!",
+	"specialization": "Richting",
+	"motivation": "Motivatie"
 }

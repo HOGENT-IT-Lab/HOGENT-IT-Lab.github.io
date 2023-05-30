@@ -22,5 +22,10 @@
 	"discord": "Discord handle",
 	"subject": "Subject",
 	"message": "Message",
-	"send": "Send"
+	"send": "Send",
+
+	"joinUs": "Join us",
+	"weAccept": "We welcome everyone with the right mindse!",
+	"specialization": "Specialzation",
+	"motivation": "Motivation"
 }
