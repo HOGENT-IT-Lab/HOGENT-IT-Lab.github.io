@@ -17,6 +17,4 @@ NEXT_PUBLIC_AUTH0_API_AUDIENCE=Auth0 API Audience
 
 ### run app
 
-```bash
-yarn dev
-```
+Install and update packages using `yarn install` then use `yarn dev` to run the project on a local server.
