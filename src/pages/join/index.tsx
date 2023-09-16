@@ -4,7 +4,9 @@ import join from '@/../public/join.gif';
 export default function Join() {
 	return (
 		<div>
-			<Image src={join} alt="Join us" className="rounded" />
+			<a href="https://discord.gg/tihogent">
+				<Image src={join} alt="Join us" className="rounded" />
+			</a>
 		</div>
 	);
 }
