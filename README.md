@@ -29,22 +29,22 @@ Install and update packages using `yarn install` then use `yarn dev` to run the 
 - 🗄️ Database verbinden met prisma orm bv. API schrijven is niet nodig aangezien Next.js server side rendering heeft en form actions. 
 
 ### 📜 Certificates
-Hmtl template om te zetten naar pdf met enkele variabelen zoals naam, periode, uitgevoerde projecten en events...
+Html template om te zetten naar pdf met enkele variabelen zoals naam, periode, uitgevoerde projecten en events...
 
-**Verantwoordelijken:**
+**Verantwoordelijken:** Jens, Fiorel
 
 ### 📅 Events sectie 
 Simpele lijst van events met toekomst / verleden. 
 Naam, datum, locatie, beschrijving, ?foto, verslag...
 
-**Verantwoordelijken:**
+**Verantwoordelijken:** Viktor, Sena, Joris
 
 ### 🔄 Rooster vernieuwen
 Google Calendar gebruiken we niet meer, dus gebruik een calender component om ons teams rooster te tonen
 
-**Verantwoordelijken:**
+**Verantwoordelijken:** Sena, Fiorel, Jens
 
-### 📈 Organigram (dit jaar en vorige jaren)
-Npm package gebruiken om een organigram te maken
+### 📈 Ledenlijst (dit jaar en vorige jaren)
+Npm package gebruiken om een ledenlijst te maken
 
-**Verantwoordelijken:**
+**Verantwoordelijken:** Joris, Viktor
