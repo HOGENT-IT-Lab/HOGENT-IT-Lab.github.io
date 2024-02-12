@@ -1,7 +1,7 @@
 # <img alt="IT Lab" src="https://raw.githubusercontent.com/HOGENT-IT-Lab/HOGENT-IT-Lab.github.io/main/public/logo.png" height="40px" > HOGENT-IT-Lab.github.io
 
 Website for IT-Lab HoGent using `GitHub Pages` and `Next.js`. Authorization with `Auth0` for upcoming features.  
-https://it-lab.be redirects to https://hogent-it-lab.github.io.
+https://hogent-it-lab.github.io
 
 ## 🔧 Development
 
